@@ -1,0 +1,19 @@
+{
+    "name": "dev/academy",
+    "description": "A demo wordpress plugin",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Masud Rana"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Dev\\Academy\\": "includes/"
+        },
+        "files" : []
+    }
+}
