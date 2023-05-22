@@ -98,13 +98,8 @@ final class Dev_Academy {
      * @return void
      */
     public function activate() {
-        $installed = get_option('dev_academy_installed');
-
-        if(!$installed){
-            update_option('dev_academy_installed', time());
-        }
-
-        update_option('dev_academy_version', DEV_ACADEMY_VERSION);
+        $installer = new Dev\Academy\Installer();
+        $installer->run();
     }
 
 }
